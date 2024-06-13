@@ -29,7 +29,7 @@ jobs:
             git pull
 
             doas /bin/cp nginx.conf -rf /etc/nginx/nginx.conf
-            doas /bin/cp sites-enabled -rf /etc/nginx/sites-enabled
+            doas /bin/cp sites-enabled -rf /etc/nginx/
 
             doas systemctl restart nginx
 
