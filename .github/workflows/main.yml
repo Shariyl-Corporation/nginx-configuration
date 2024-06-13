@@ -20,7 +20,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           port: 22
           script: |
-            cd /home/${{ secrets.SSH_HOST }}
+            cd /home/${{ secrets.SSH_USER }}
             if [ ! -d "nginx-configuration" ]; then
                 git clone https://github.com/Shariyl-Corporation/nginx-configuration
             fi
