@@ -28,8 +28,8 @@ jobs:
             cd nginx-configuration
             git pull
 
-            doas /bin/cp nginx.conf -rf /etc/nginx/nginx.conf
-            doas /bin/cp sites-enabled -rf /etc/nginx/
+            sudo /bin/cp nginx.conf -rf /etc/nginx/nginx.conf
+            sudo /bin/cp sites-enabled -rf /etc/nginx/
 
-            doas systemctl restart nginx
+            sudo systemctl restart nginx
 
